@@ -1,24 +1,379 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<div class="header-bar">
-  <h1>*folio</h1>
-  <h2>simple whitespace theme</h2>
-  <br/>
-  <hr>
-  <br/>
-</div>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <title>Hee su Lee — Graphic Designer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+    <script src="main.js"></script>
+    <style>
+        .introduce {
+            font-size: 25px;
+            padding-top: 40px;
+            padding-left: 30px;
+            padding-bottom: 100px;
+            padding-right: 20px;
+        }
+
+        .container {
+            padding-top: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            flex: none;
+            flex-basis: 33.33%;
+            margin-bottom: 40px;
+            padding: 0 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+        .thumb {
+            flex: auto;
+        }
+
+        .image {
+            vertical-align: top;
+        }
+
+        .container .text {
+            flex: none;
+            flex-basis: 40px;
+            min-height: 0;
+            margin-top: 10px;
+            font-size: 13px;
+        }
+
+        .container .title {
+            font-size: 20px;
+        }
+
+        .container .brand {
+            font-size: 12px;
+            color: grey
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 텍스트 영역 -->
+    <div class="wrapper">
+        <header id="header">
+            <h1 id="name">
+                <a href="projects.html">HEE SU LEE</a>
+            </h1>
+
+            <nav>
+                <ul class="menu">
+                    <li class="target"><a href="index.html">Projects</a>
+                    </li>
+                    <li class=><a href="info.html">Info</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
 
-<ul class="post-list">
-    {% for post in paginator.posts %}
-      <li>
-        <h2><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-        <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>
-        <p>{{ post.description }}</p>
-        <br/>
-        <hr/>
-      </li>
-    {% endfor %}
-</ul>
+        <div class="main-content">
+            <div class="introduce">
+                👋 Hello! I'm Heesu. </br>
+                I'm a BX designer based in Korea.</br>
+                I also do branding, drawing, writing and making some creative things!
+            </div>
+
+            <!-- 콜렉션 뷰 -->
+            <ul class="container">
+                <!-- BRUNT -->
+                <li class="item">
+                    <a href="brunt_portfolio.html">
+                        <div class="thumb mouse-effect">
+                            <img class="image" src="img/brunt_thumb.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+
+                    <div class="text">
+                        <div class="title">
+                            BRUNT BX
+                        </div>
+                        <div class="brand">
+                            BRUNT
+                        </div>
+                    </div>
+                </li>
+
+                <!-- KB 국민카드 -->
+                <li class="item">
+                    <a href="kb_portfolio.html">
+                        <div class="thumb mouse-effect">
+                            <img class="image" src="img/kb/kb_thumb.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+
+                    <div class="text">
+                        <div class="title">
+                            KB KOOKMIN CARD BX
+                        </div>
+                        <div class="brand">
+                            KB국민카드
+                        </div>
+                    </div>
+                </li>
+
+                <!-- bev-->
+                <li class="item">
+                    <a href="bev_portfolio.html">
+                        <div class="thumb mouse-effect">
+                            <img class="image" src="img/bev/bev_thumb.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+
+                    <div class="text">
+                        <div class="title">
+                            BeV Series Package Design
+                        </div>
+                        <div class="brand">
+                            KB국민카드
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Samsung-->
+                <li class="item">
+                    <a href="bohem_portfolio.html">
+                        <div class="thumb mouse-effect">
+                            <img class="image" src="img/samsung_thumb.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+
+                    <div class="text">
+                        <div class="title">
+                            SAMSUNG Retail Icon Design
+                        </div>
+                        <div class="brand">
+                            SAMSUNG
+                        </div>
+                    </div>
+                </li>
+
+                <!-- sbs -->
+                <li class="item">
+                    <a href="sbs_portfolio.html">
+                        <div class="thumb mouse-effect">
+                            <img class="image" src="img/sbs/sbs_thumb.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+
+                    <div class="text">
+                        <div class="title">
+                            2018 SBS Branding
+                        </div>
+                        <div class="brand">
+                            SBS
+                        </div>
+                    </div>
+                </li>
+
+                <!-- bohem -->
+                <li class="item">
+                    <a href="bohem_portfolio.html">
+                        <div class="thumb mouse-effect">
+                            <img class="image" src="img/bohem_thumb.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+
+                    <div class="text">
+                        <div class="title">
+                            BOHEM Package Design
+                        </div>
+                        <div class="brand">
+                            KT&G
+                        </div>
+                    </div>
+                </li>
+
+                <!-- LG -->
+                <li class="item">
+                    <a href="lg_portfolio.html">
+                        <div class="thumb mouse-effect">
+                            <img class="image" src="img/lg_thumb.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+
+                    <div class="text">
+                        <div class="title">
+                            LG Initial & Help GUI
+                        </div>
+                        <div class="brand">
+                            LG
+                        </div>
+                    </div>
+                </li>
+
+                <!-- LG U+ -->
+                <li class="item">
+                    <a href="kt_portfolio.html">
+                        <div class="thumb mouse-effect">
+                            <img class="image" src="img/lg_home_thumb.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+
+                    <div class="text">
+                        <div class="title">
+                            LG U+ Home IoT GUI
+                        </div>
+                        <div class="brand">
+                            LG U+
+                        </div>
+                    </div>
+                </li>
+
+                <!-- LG Weather -->
+                <li class="item">
+                    <a href="kt_portfolio.html">
+                        <div class="thumb mouse-effect">
+                            <img class="image" src="img/lg_weather_thumb.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+
+                    <div class="text">
+                        <div class="title">
+                            LG Weather APP Illust
+                        </div>
+                        <div class="brand">
+                            LG
+                        </div>
+                    </div>
+                </li>
+
+                <!-- KT -->
+                <li class="item">
+                    <a href="kt_portfolio.html">
+                        <div class="thumb mouse-effect">
+                            <img class="image" src="img/kt_thumb.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+
+                    <div class="text">
+                        <div class="title">
+                            KT Biz Character Design
+                        </div>
+                        <div class="brand">
+                            KT
+                        </div>
+                    </div>
+                </li>
+
+                <!-- ESSE -->
+                <li class="item">
+                    <a href="kt_portfolio.html">
+                        <div class="thumb mouse-effect">
+                            <img class="image" src="img/esse_thumb.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+
+                    <div class="text">
+                        <div class="title">
+                            ESSE Change SV Package Design
+                        </div>
+                        <div class="brand">
+                            KT&G
+                        </div>
+                    </div>
+                </li>
+
+                <!-- MUZIN -->
+                <li class="item">
+                    <a href="kt_portfolio.html">
+                        <div class="thumb mouse-effect">
+                            <img class="image" src="img/muzin_thumb.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+
+                    <div class="text">
+                        <div class="title">
+                            MUZIN Web Magazine Design
+                        </div>
+                        <div class="brand">
+                            National Museum of Korea
+                        </div>
+                    </div>
+                </li>
+
+                <!-- 2018 calendar -->
+                <li class="item">
+                    <a href="kt_portfolio.html">
+                        <div class="thumb mouse-effect">
+                            <img class="image" src="img/2018_thumb.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+
+                    <div class="text">
+                        <div class="title">
+                            2018 amoeba Calendar Design
+                        </div>
+                        <div class="brand">
+                            amoeba
+                        </div>
+                    </div>
+                </li>
+
+                <!-- 2017 calendar -->
+                <li class="item">
+                    <a href="kt_portfolio.html">
+                        <div class="thumb mouse-effect">
+                            <img class="image" src="img/2018_thumb.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+
+                    <div class="text">
+                        <div class="title">
+                            2017 amoeba Calendar Design
+                        </div>
+                        <div class="brand">
+                            amoeba
+                        </div>
+                    </div>
+                </li>
+
+                <!-- LG -->
+                <li class="item">
+                    <a href="kt_portfolio.html">
+                        <div class="thumb mouse-effect">
+                            <img class="image" src="img/2018_thumb.jpg" width="100%" height="100%">
+                        </div>
+                    </a>
+
+                    <div class="text">
+                        <div class="title">
+                            LG Global
+                        </div>
+                        <div class="brand">
+                            LG
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <div class="flex-container">
+        <div class="flex-item">
+            Designed & Developed by Heesu Lee. 2020
+        </div>
+    </div>
+</body>
+
+</html>
